@@ -1,0 +1,168 @@
+<body>
+    {{> mainContainer }}
+</body>
+
+<template name="mainContainer">
+    <div class="container">
+        <header>
+            <h1>General Ledger</h1>
+        </header>
+        <div class="float-left">
+            <div class="inline-block">
+                <a href="#">
+                    <img src="/images/save.png" alt="Save Image"><br />
+                    <span>Save</span>
+                </a>
+            </div>
+            <div class="inline-block">
+                <a href="#">
+                    <img src="/images/export.png" alt="Export Image"><br />
+                    <span>Export</span>
+                </a>
+            </div>
+            <div class="inline-block">
+                <a href="#">
+                    <img src="/images/grid.png" alt="Grid Image"><br />
+                    <span>Grid</span>
+                </a>
+            </div>
+            <div class="inline-block">
+                <a href="#">
+                    <img src="/images/charts.png" alt="Charts Image"><br />
+                    <span>Charts</span>
+                </a>
+            </div>
+        </div>
+        <div class="float-right">
+            <div class="inline-block">
+                <a href="#">
+                    <img src="/images/format.png" alt="Format Image"><br />
+                    <span>Format</span>
+                </a>
+            </div>
+            <div class="inline-block">
+                <a href="#">
+                    <img src="/images/options.png" alt="Options Image"><br />
+                    <span>Options</span>
+                </a>
+            </div>
+            <div class="inline-block">
+                <a href="#">
+                    <img src="/images/fields.png" alt="Fields Image"><br />
+                    <span>Fields</span>
+                </a>
+            </div>
+            <div class="inline-block">
+                <a href="#">
+                    <img src="/images/fullscreen.png" alt="Charts Image"><br />
+                    <span>Fullscreen</span>
+                </a>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="7">General Ledger</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>LOCATION NAME</th>
+                    <th>GUARDIAN NAME</th>
+                    <th>CHILD BIRTHDATE</th>
+                    <th>CHILD EXPECTED START DATE</th>
+                    <th>CHILD NAME</th>
+                    <th>GUARDIAN ADDED DATE</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each datas}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{locationName}}</td>
+                    <td>{{guardianName}}</td>
+                    <td>{{childBirthdate}}</td>
+                    <td>{{childExpectedStartDate}}</td>
+                    <td>{{childName}}</td>
+                    <td>{{guardianAddedDate}}</td>
+                </tr>
+                {{/each}}
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<template name="task">
+    <li>{{text}}</li>
+</template>

@@ -1,0 +1,56 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+table {
+  width: 100%;
+}
+
+table, td, th {
+  border: 1px solid blueviolet;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+}
+
+td:first-child {
+  text-align: center;
+}
+
+thead th {
+  background-color: blueviolet;
+  color: white;
+}
+
+thead td {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+div.inline-block {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+a > img {
+  width: 40px;
+  height: 40px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
